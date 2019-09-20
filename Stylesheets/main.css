@@ -57,3 +57,172 @@
     }
 }
 
+
+/*Banner*/
+.banner {
+    background: lightgray;
+    height: 700px ;
+}
+ 
+.hero {
+    width: 100% ;
+    height: 250px ;
+}
+
+.hero img {
+    width: 100% ;
+    height : 100% ;
+}
+
+.intro {
+    padding: 32px 16px ;
+    display: flex ;
+    flex-direction: column;
+    align-content: center ;
+}
+ 
+.intro > * {
+    margin: 15px 10px 0 10px ;
+}
+
+.intro h3 {
+    font-size: 35px ;
+    line-height: 40px ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.intro p {
+    font-size: 25px ;
+    line-height: 30px ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.intro input {
+    width: 94% ;
+    border : none ;
+    border-radius: 2px ;
+    background:grey ;
+    color:white ;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 18px ;
+    line-height : 40px ;
+    padding : 8px 20px  ;
+    margin : 22px auto 0 auto  ; 
+}
+
+@media only screen and (min-width:615px) {
+    .banner {
+        display: flex  ;
+    }
+
+    .hero {
+        width: 60% ;
+        height:550px ;
+        position: relative ;
+        top: 60px ;
+        left: 32px ;
+    }
+
+    .hero img {
+        width: 100% ;
+        height: 100% ;
+    }
+
+    .intro {
+        width: 35% ;
+        position: relative ;
+        top: 165px ;
+        right: -65px ;
+        margin-right: 0;
+    }
+}
+
+/*Content*/
+.tabular {
+    width: 95% ;
+    margin-left: 10px  ;
+    margin-right: 10px ;
+    margin-top: 15px ;
+}
+
+.tabular div img {
+    width: 100% ;
+    height: auto;
+}
+
+.tabular div div h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em ;
+    margin: 15px ;
+    text-align: center;
+}
+
+
+.content :nth-child(1) {
+    width: 60%;
+    margin: 15px ;
+}
+
+.content :nth-child(1) img {
+    width: 95% ;
+    margin: 15px ;
+}
+
+.tabular div div p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em ;
+    margin: 10px auto  ;
+}
+
+.content :nth-child(1) h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em ;
+    margin: 15px ;
+    text-align: center;
+}
+
+.content :nth-child(1) p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em ;
+    margin: 10px auto  ;
+}
+
+@media only screen and (min-width: 815px) {
+    .content {
+        display: flex ;
+    }
+
+    .tabular {
+        width: 40% ;
+    }
+
+    .tabular div {
+        display: flex ;
+    }
+
+    .tabular div div {
+        display: flex ;
+        flex-direction: column ;
+    }
+
+    .tabular div div h3 , .tabular div div p {
+        margin-left: 2px ;
+    }
+
+}
+
+@media only screen and (max-width: 815px) {
+    .content .poster {
+        display: none ;
+    }
+
+    .tabular div  img {
+        width: 90% ;
+    }
+    
+    .tabular :nth-child(n) {
+        width: 90%  !important ;
+    }
+}
