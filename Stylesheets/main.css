@@ -31,7 +31,7 @@
 .desktop-nav .list {
     display: flex;
     line-height: 37px ;
-    font-size: 25px ;
+    font-size: 20px ;
     padding-right: 24px ;
 }
 
@@ -44,3 +44,16 @@
     color: #808080 ; 
     margin: 0 16px ;
 }
+
+@media only screen and (min-width: 815px ) {
+    .mobile-nav {
+        display: none ;
+    }
+}
+
+@media only screen and (max-width: 815px ) {
+    .desktop-nav {
+        display: none ;
+    }
+}
+
